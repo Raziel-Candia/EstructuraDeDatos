@@ -33,6 +33,14 @@ public class ListaEnlazada {
 
         }
     }
+    public void mostrar(){
+        NodoDB actual = inicio;
+
+        while (actual != null){
+            System.out.print(actual.dato + " -->");
+            actual = actual.siguiente;
+        }
+    }
 }
 
 
