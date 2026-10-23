@@ -41,6 +41,43 @@ public class ListaEnlazada {
             actual = actual.siguiente;
         }
     }
+
+    public void InsertarPosision(int datoN, int datoBus){
+        NodoDB nuevodato = new NodoDB(datoN);
+
+        if (inicio==null){
+            return;
+        } else {
+            NodoDB actual=inicio;
+            while (actual!= null){
+                if (actual.dato ==datoBus){
+                    nuevodato.siguiente= actual.siguiente;
+                    nuevodato.anterior=actual;
+                    actual.siguiente=nuevodato;
+                    if (actual.siguiente!=null){
+                        actual.siguiente.anterior=nuevodato;
+                    }
+                }
+                actual = actual.siguiente;
+            }
+
+        }
+
+    }
+
+    public void MostrarDeFinAInicio(){
+        NodoDB actual=inicio;
+
+        while (actual!=null){
+            actual=actual.siguiente;
+
+        }
+        while (actual.siguiente!=null){
+            System.out.print(actual.dato + "--->");
+            actual=actual.anterior;
+        }
+
+    }
 }
 
 
