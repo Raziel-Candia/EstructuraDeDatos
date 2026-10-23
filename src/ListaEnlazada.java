@@ -68,11 +68,11 @@ public class ListaEnlazada {
     public void MostrarDeFinAInicio(){
         NodoDB actual=inicio;
 
-        while (actual!=null){
+        while (actual.siguiente!=null){
             actual=actual.siguiente;
 
         }
-        while (actual.siguiente!=null){
+        while (actual!=null){
             System.out.print(actual.dato + "--->");
             actual=actual.anterior;
         }
