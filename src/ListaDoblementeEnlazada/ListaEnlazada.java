@@ -1,3 +1,4 @@
+package ListaDoblementeEnlazada;
 public class ListaEnlazada {
 
     private NodoDB inicio;

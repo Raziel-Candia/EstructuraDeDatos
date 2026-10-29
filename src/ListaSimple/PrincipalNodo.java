@@ -1,3 +1,4 @@
+package ListaSimple;
 public class PrincipalNodo {
     public static void main(String[] args) {
         ListaSimple listaS = new ListaSimple();

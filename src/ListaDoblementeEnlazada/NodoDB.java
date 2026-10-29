@@ -1,3 +1,4 @@
+package ListaDoblementeEnlazada;
 public class NodoDB {
 
     int dato;

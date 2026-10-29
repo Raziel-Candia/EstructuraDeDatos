@@ -1,3 +1,4 @@
+package ListaSimple;
 public class ListaSimple {
 
     private Nodo inicio;

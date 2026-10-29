@@ -1,10 +1,10 @@
 package Pilas.HistorialNavegacion;
 
-public class Nodo {
+public class NodoHistorial {
     String url;
-    Nodo siguiente;
+    NodoHistorial siguiente;
 
-    public Nodo(String url) {
+    public NodoHistorial(String url) {
         this.url = url;
         this.siguiente = null;
     }
