@@ -1,4 +1,4 @@
-package BurbujaYseleccion;
+package AlgoritmosDeOrdenamiento;
 import java.util.Scanner;
 
 public class Seleccion {
